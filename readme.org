@@ -1,0 +1,13 @@
+#+TITLE: Dotfiles
+#+AUTHOR: mklno
+#+STARTUP: inlineimages
+
+The repo contains few of my config files.
+*** I3 window manager
+[[file:assets/i3.png]]
+*** Emacs
+[[file:assets/emacs.png]]
+*** CMUS
+[[file:assets/cmus.png]]
+*** VIM
+[[file:assets/vim.png]]
