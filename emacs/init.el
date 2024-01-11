@@ -1,6 +1,9 @@
-(load "~/.emacs.d/myFunction.el")
+(add-to-list 'load-path "~/.emacs.d/functions/")
+(require 'code-block)
 (load "~/.emacs.d/dash.el")
 (load "~/.emacs.d/s.el")
+(load "~/.emacs.d/ejournal.el")
+(load "~/.emacs.d/themes/sexy-monochrome-theme.el")
 (require 'package)
 (setq package-enable-at-startup nil)
 
@@ -16,7 +19,7 @@
   :config
   (dashboard-setup-startup-hook)
   (setq dashboard-startup-banner "~/.emacs.d/avatar.png")
-  (setq dashboard-banner-logo-title "mklno@D03t03v5ky"))
+  (setq dashboard-banner-logo-title "mklno@dostoevsky"))
 (setq inhibit-startup-screen t)
 
 (use-package ef-themes
@@ -77,7 +80,7 @@
      "df2cdf4ffb933c929b6a95d60ac375013335b61565b9ebf02177b86e5e4d643f"
      default))
  '(default-input-method "tamil-phonetic")
- '(org-agenda-files '("~/todo/agenda.org"))
+ '(org-agenda-files '("/home/mklno/todo/agenda.org"))
  '(package-selected-packages '(emms treemacs ef-themes dashboard))
  '(send-mail-function 'mailclient-send-it)
  '(tamil-phonetic-consonants
@@ -98,7 +101,7 @@
 (require 'emms-setup)
 (emms-all)
 (setq emms-player-list '(emms-player-mpv))
-(setq emms-source-file-default-directory "/media/mklno/50403E88403E7536/Music/")
+(setq emms-source-file-default-directory "/media/mklno/Music/")
 
 ;config for tamil typing
 (load "~/.emacs.d/tamil-phonetic.el")
